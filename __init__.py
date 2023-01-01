@@ -23,7 +23,6 @@ def getMoviePosterImg(title):
   with open("test.jpg", "wb") as file:  # 開啟資料夾及命名圖片檔
     file.write(img.content)  # 寫入圖片的二進位碼
   img=cv2.imread('test.jpg')
-  print(img.size)
   return cv2.resize(img,(150,200))
   # response.status_code 回傳狀態 200,404,...
   # response.content 回傳內容編碼 (純二進制)
